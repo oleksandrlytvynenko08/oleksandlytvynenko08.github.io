@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../Fonts/RobotoSlab-VariableFontwght.woff2") format("woff2"),
+    url("../Fonts/RobotoSlab-VariableFontwght.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.separator,
+.icon-text {
+  font-family: "Roboto Slab", serif;
+  color: #2b3a41;
+  font-weight: 700;
+}
+
+.text-green {
+  color: #5b9446;
+}
+
+.separator {
+  color: #5b9446;
+  letter-spacing: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  text-align: center;
+  font-size: 13px;
+  color: #2b3a41;
+  margin: 10px;
+  width: 130px;
+}
+
+.icon-box svg {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.text-green {
+  color: #5b9446;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-read-more {
+  background-color: #5b9446;
+  color: white;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.activity-box h5 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.activity-box h5::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background-color: #79a168;
+}
+
+.activity-box p {
+  font-size: 14px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
