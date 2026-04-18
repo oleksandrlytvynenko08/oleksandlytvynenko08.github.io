@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../Fonts/RobotoSlab-VariableFontwght.woff2") format("woff2"),
-    url("../Fonts/RobotoSlab-VariableFontwght.woff") format("woff");
+  src: url("../Fonts/RobotoSlab-VariableFontwght.woff2") format("woff2"), url("../Fonts/RobotoSlab-VariableFontwght.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,12 +32,12 @@ h6,
 
 .separator {
   color: #5b9446;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-
 .icon-box {
   text-align: center;
   font-size: 13px;

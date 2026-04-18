@@ -2,9 +2,17 @@
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 800px;
   position: relative;
   padding-bottom: 80px;
+}
+
+.hero-section-tomato {
+  background-image: url("../images/hero-bg-tomato.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 850px;
+  position: relative;
 }
 
 .top-nav {
