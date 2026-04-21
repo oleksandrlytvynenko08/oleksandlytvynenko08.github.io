@@ -231,7 +231,63 @@
   cursor: pointer;
   transition: 0.3s;
 }
+
 .btn-download:hover {
   background-color: #5b9446;
   color: white;
+}
+
+/* --- Contact ---*/
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #2b3a41;
+}
+
+.form-control {
+  border-radius: 0;
+  border: 1px solid #ced4da;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  border-radius: 30px !important;
+  padding: 12px 20px !important;
+  border: 1px solid #ced4da;
+  height: 50px;
+}
+
+select.form-control {
+  padding: 0 20px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.btn-send-message {
+  background-color: #5b9446;
+  color: white;
+  border-radius: 30px;
+  padding: 12px 40px;
+  border: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-send-message:hover {
+  background-color: #447233;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }

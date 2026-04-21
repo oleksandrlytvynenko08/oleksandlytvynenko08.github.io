@@ -15,6 +15,14 @@
   position: relative;
 }
 
+.hero-section-contact {
+  background-image: url('../images/hero-contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+}
+
 .header-white-bar {
   background-color: #ffffff;
   width: 100%;
