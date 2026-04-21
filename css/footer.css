@@ -1,32 +1,37 @@
 .footer-section {
-  background-color: #2d3b41;
-  color: white;
-  padding: 40px 0 20px 0;
+  padding: 0;
 }
-
+.footer-top {
+  background-color: #324950;
+  padding: 30px 0;
+}
+.footer-bottom {
+  background-color: #2b3e45;
+  padding: 20px 0;
+}
 .footer-nav a {
   color: white;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
   text-transform: uppercase;
-  margin-right: 20px;
+  margin-right: 25px;
   text-decoration: none;
 }
-
 .footer-nav a:hover {
   color: #5b9446;
 }
-
-.social-icons img {
-  width: 25px;
-  margin-left: 10px;
+.social-icons svg {
+  width: 28px;
+  height: 28px;
+  margin-left: 15px;
   cursor: pointer;
+  transition: 0.2s;
 }
-
-.copyright {
-  text-align: center;
-  font-size: 11px;
+.social-icons svg:hover {
+  opacity: 0.8;
+}
+.copyright-text {
+  font-size: 12px;
   color: #8c979c;
-  margin-top: 30px;
-  border-top: 1px solid #45555c;
-  padding-top: 20px;
+  letter-spacing: 0.5px;
 }

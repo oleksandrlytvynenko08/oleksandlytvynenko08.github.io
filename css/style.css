@@ -5,6 +5,12 @@
   font-style: normal;
 }
 
+@media (min-width: 1200px) {
+  .narrow-container {
+    max-width: 1050px !important;
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #4a4a4a;
@@ -19,7 +25,6 @@ h3,
 h4,
 h5,
 h6,
-.separator,
 .icon-text {
   font-family: "Roboto Slab", serif;
   color: #2b3a41;
@@ -32,30 +37,12 @@ h6,
 
 .separator {
   color: #5b9446;
-  letter-spacing: 2px;
-  font-size: 14px;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
   font-weight: 700;
-  margin-top: 20px;
+  letter-spacing: 5px;
+  margin-top: 15px;
   margin-bottom: 30px;
-}
-.icon-box {
-  text-align: center;
-  font-size: 13px;
-  color: #2b3a41;
-  margin: 10px;
-  width: 130px;
-}
-
-.icon-box svg {
-  height: 50px;
-  margin-bottom: 15px;
-}
-
-.text-green {
-  color: #5b9446;
-  letter-spacing: 4px;
-  font-weight: bold;
-  font-size: 14px;
 }
 
 .btn-read-more {
@@ -65,26 +52,12 @@ h6,
   border: none;
   border-radius: 3px;
   font-weight: bold;
-}
-
-.activity-box h5 {
-  position: relative;
-  padding-bottom: 15px;
-}
-
-.activity-box h5::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 1px;
-  background-color: #79a168;
-}
-
-.activity-box p {
+  cursor: pointer;
+  text-transform: uppercase;
   font-size: 14px;
-  margin-top: 15px;
-  line-height: 1.6;
+  transition: 0.3s;
+}
+
+.btn-read-more:hover {
+  background-color: #447233;
 }
