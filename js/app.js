@@ -41,9 +41,9 @@ var app = new Vue({
         savedCartIds.push(productId);
         localStorage.setItem("cart", JSON.stringify(savedCartIds));
         this.getCart();
-        alert("Часник додано до кошика!");
+        alert("This product has been added to your cart!");
       } else {
-        alert("Цей товар вже у кошику!");
+        alert("This product is already in your cart!");
       }
     },
 
