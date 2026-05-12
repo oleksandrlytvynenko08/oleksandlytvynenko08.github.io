@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agridera - Garlic</title>
+    <title>Agridera</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
@@ -17,9 +17,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
-    <header class="hero-section">
+    <header>
       <div class="header-white-bar border-top border-light border-2">
-        <div class="container">
+        <div class="container narrow-container">
           <div class="row align-items-center">
             <div class="col-md-3 position-relative d-flex justify-content-center justify-content-md-start">
               <img src="images/logo.png" alt="Agridera Logo" class="img-fluid logo-img" style="max-height: 70px" />
@@ -30,7 +30,6 @@
               </svg>
             </div>
             <div class="col-md-9 d-flex flex-column align-items-end justify-content-center">
-              <!-- Search -->
               <div class="search-container d-flex align-items-center">
                 <input type="text" class="search-box" placeholder="Search" />
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2b3a41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="cursor: pointer">
@@ -38,7 +37,6 @@
                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
               </div>
-              <!-- Navigation -->
               <nav class="nav">
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="#">Company Profile</a>
@@ -51,111 +49,57 @@
           </div>
         </div>
       </div>
-
-      <div class="container hero-content" style="margin-top: 220px">
-        <h1 style="font-size: 48px; color: #735440; margin-bottom: 30px">Agridera Seeds and Agriculture Ltd</h1>
-        <button class="btn-read-more">READ MORE</button>
-      </div>
     </header>
 
-    <main>
-      <!-- Icons -->
-      <section class="icons-section">
-        <div class="container">
-          <div class="d-flex justify-content-between text-center flex-wrap">
-            <div class="icon-box">
-              <img src="images/icon-wheat.svg" alt="Wheat" />
-              <br /><span class="icon-text">Wheat</span>
-            </div>
-            <div class="icon-box">
-              <img src="images/icon-watermelon.svg" alt="Watermelon" />
-              <br /><span class="icon-text">Confection Watermelon</span>
-            </div>
-            <div class="icon-box">
-              <img src="images/icon-clover.svg" alt="Clover" />
-              <br /><span class="icon-text">Clover</span>
-            </div>
-            <div class="icon-box">
-              <img src="images/icon-sunflower1.svg" alt="Sunflower" />
-              <br /><span class="icon-text">Confection Sunflower</span>
-            </div>
-            <div class="icon-box">
-              <img src="images/icon-tomato.svg" alt="Tomato" />
-              <br /><span class="icon-text">Tomato</span>
-            </div>
-            <div class="icon-box">
-              <img src="images/icon-eggplant.svg" alt="Eggplant" />
-              <br /><span class="icon-text">Eggplant P/O</span>
-            </div>
-            <div class="icon-box">
-              <img src="images/icon-sunflower2.svg" alt="Sunflower" />
-              <br /><span class="icon-text">Ornamental Sunflower</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Vision & Mission -->
-      <section class="vision-mission-section">
-        <div class="container">
-          <div class="row align-items-center mb-5 pb-5">
-            <div class="col-md-6 pr-md-5">
-              <h2 style="font-size: 40px">Vision</h2>
-              <div class="separator">xxxxx</div>
-              <p>We believe in long-term growth with an emphasis on the potential of emerging markets. We also support the global need of feeding the growing population.</p>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="images/vision-img.jpg" alt="Vision" class="img-fluid" style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)" />
-            </div>
-          </div>
-
-          <div class="row align-items-center mt-5 pt-5">
-            <div class="col-md-6 text-center position-relative d-flex justify-content-center align-items-center">
-              <img src="images/mission-img.jpg" alt="Mission" class="img-fluid" style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); position: relative; z-index: 1" />
-              <svg class="play-btn" style="position: absolute; z-index: 2; width: 80px; height: 80px; cursor: pointer; filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.15))" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="50" fill="white" />
-                <path d="M65.5 47.4019C67.5 48.5566 67.5 51.4434 65.5 52.5981L43 65.5885C41 66.7432 38.5 65.2998 38.5 62.9904L38.5 37.0096C38.5 34.7002 41 33.2568 43 34.4115L65.5 47.4019Z" fill="#5b9446" />
+    <main id="app" class="product-page-bg" style="padding: 60px 0">
+      <div class="container narrow-container">
+        <div v-if="selectedProduct">
+          <div class="mb-5">
+            <a href="garlic.html" class="back-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5b9446" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 5px">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
               </svg>
-            </div>
-            <div class="col-md-6 pl-md-5">
-              <h2 style="font-size: 40px">Mission</h2>
+              Return to all garlic
+            </a>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-md-6 pr-md-5">
+              <h1 class="prod-main-title">{{ selectedProduct.name }}</h1>
+              <h2 class="prod-sub-title">{{ selectedProduct.desc }}</h2>
               <div class="separator">xxxxx</div>
-              <p>Breeding and marketing seeds for advanced field crops and vegetable varieties that provide an added value to all supply chain partners.</p>
+
+              <div class="d-flex align-items-center mb-5">
+                <button @click="addToCart(selectedProduct.id)" class="btn btn-lg text-white" style="background-color: #5b9446">Додати до кошика</button>
+
+                <a href="contact.html" v-if="cart.includes(selectedProduct)" class="ml-3" style="color: #df5a5a; font-weight: bold">Перейти до кошика ➡️</a>
+              </div>
+
+              <h5 class="char-title">CHARACTERISTICS</h5>
+              <div class="char-block">
+                <p style="margin-bottom: 0"><strong>Resistance</strong><br />Great against cold weather and soil diseases.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 pl-md-4 mt-5 mt-md-0 text-center text-md-left">
+              <img :src="selectedProduct.image" :alt="selectedProduct.name" class="img-fluid" style="border: 10px solid #fff; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px" />
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- Main Activities -->
-      <section class="activities-section">
-        <div class="container">
-          <h2 style="font-family: 'Roboto Slab', serif; color: #2b3a41; font-size: 36px; text-align: center">Agridera's main activities</h2>
-          <div class="separator mx-auto text-center" style="margin-bottom: 50px">xxxxx</div>
-
-          <div class="row mt-5">
-            <div class="col-md-4 activity-box">
-              <img src="images/act-cotton.png" alt="Cotton" />
-              <h5>Open field crop seeds</h5>
-              <p>wheat, cotton, legumes, <br />hybrid confection sunflower</p>
-            </div>
-            <div class="col-md-4 activity-box">
-              <img src="images/act-tomato.png" alt="Tomato" />
-              <h5>Vegetable seeds</h5>
-              <p>hybrid open field tomatoes, <br />eggplant, onion, paprika, etc.</p>
-            </div>
-            <div class="col-md-4 activity-box">
-              <img src="images/act-sunflower.png" alt="Sunflower" />
-              <h5>Ornamental seeds</h5>
-              <p>hybrid cut sunflowers, hybrid <br />patio tomatoes, Bells of Irland, etc.</p>
-            </div>
+        <div v-else>
+          <h2 class="text-center">Please select a product first.</h2>
+          <div class="text-center mt-4">
+            <a href="garlic.html" class="btn text-white" style="background-color: #5b9446">Back to Products</a>
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="footer-section">
       <div class="footer-top">
-        <div class="container d-flex justify-content-between align-items-center">
+        <div class="container narrow-container d-flex justify-content-between align-items-center">
           <div class="footer-nav"><a href="#">PROFILE</a><a href="#">MANAGEMENT</a><a href="#">PRODUCTS</a><a href="#">R&D</a><a href="#">LINKS</a><a href="#">SITEMAP</a><a href="#">CONTACT</a></div>
           <div class="social-icons d-flex">
             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -188,10 +132,12 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="container text-center">
+        <div class="container narrow-container text-center">
           <span class="copyright-text">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</span>
         </div>
       </div>
     </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
